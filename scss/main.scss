@@ -1,0 +1,176 @@
+@import "variables";
+@import "toggle";
+
+*,
+*::before,
+*::after {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+html {
+  font-size: 62.5%;
+}
+
+img {
+  max-width: 100%;
+}
+
+ul {
+  list-style: none;
+}
+
+body {
+  background: url(../images/bg-top.svg) top right no-repeat $veryLightGreyBlue;
+  background-size: 50% auto;
+  font-family: $bodyFont;
+  font-size: $bodySize;
+}
+
+.container {
+  width: min(90%, 110rem);
+  margin-inline: auto;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+  gap: 3rem;
+  padding: 3rem 0;
+  min-height: 100vh;
+}
+
+.toggle-section {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  gap: 4rem;
+  h1 {
+    font-size: 3rem;
+    color: $darkGreyBlue;
+  }
+}
+
+.toggle {
+  display: flex;
+  justify-content: center;
+  gap: 2rem;
+  align-items: center;
+  p {
+    font-weight: $heavyWeight;
+    color: $lightGreyBlue;
+  }
+}
+
+.card-section {
+  display: flex;
+  flex-direction: column;
+  gap: 3rem;
+  width: 100%;
+}
+
+.card {
+  background-color: $veryLightGreyBlue;
+  box-shadow: $boxShadow;
+  border-radius: 1rem;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  gap: 2rem;
+  padding: 2rem;
+  width: 100%;
+  h3 {
+    color: $greyBlue;
+  }
+  h2 {
+    font-size: 7rem;
+    display: flex;
+    align-items: center;
+    color: $darkGreyBlue;
+  }
+  .pound {
+    font-size: 4rem;
+  }
+  ul {
+    display: flex;
+    flex-direction: column;
+    gap: 1.5rem;
+    width: 100%;
+    li {
+      display: flex;
+      justify-content: center;
+      padding-top: 1.5rem;
+      border-top: 0.1rem solid $lightGreyBlue;
+      font-weight: $heavyWeight;
+      color: $greyBlue;
+      &:last-of-type {
+        border-bottom: 0.1rem solid $lightGreyBlue;
+        padding-bottom: 1.5rem;
+      }
+    }
+  }
+  button {
+    outline: none;
+    border: none;
+    font-family: $bodyFont;
+    font-size: 1.3rem;
+    font-weight: $heavyWeight;
+    text-transform: uppercase;
+    letter-spacing: 0.2rem;
+    background: $gradient;
+    width: 100%;
+    padding: 1.6rem 0;
+    border-radius: 1rem;
+    color: $veryLightGreyBlue;
+    cursor: pointer;
+    &:hover {
+      background: transparent;
+      color: #696fdd;
+      box-shadow: 0 0 0 0.1rem #696fdd;
+    }
+  }
+}
+
+.card-main {
+  background: $gradient;
+  h3 {
+    color: $veryLightGreyBlue;
+  }
+  h2 {
+    color: $veryLightGreyBlue;
+  }
+  ul {
+    li {
+      color: $veryLightGreyBlue;
+    }
+  }
+  button {
+    background: $veryLightGreyBlue;
+    color: #696fdd;
+    &:hover {
+      background: transparent;
+      color: $veryLightGreyBlue;
+      box-shadow: 0 0 0 0.1rem $veryLightGreyBlue;
+    }
+  }
+}
+
+@media screen and (min-width: 1100px) {
+  .container {
+    gap: 6rem;
+  }
+  .card-section {
+    flex-direction: row;
+    gap: 0;
+    align-items: center;
+  }
+  .card {
+    padding: 2rem 4rem;
+    flex-grow: 0;
+    flex-shrink: 1;
+    flex-basis: auto;
+  }
+  .card-main {
+    padding: 6rem 4rem;
+  }
+}

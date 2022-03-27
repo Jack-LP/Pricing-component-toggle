@@ -1,0 +1,77 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <link
+      rel="icon"
+      type="image/png"
+      sizes="32x32"
+      href="./images/favicon-32x32.png"
+    />
+    <link rel="stylesheet" href="./scss/main.css" />
+    <script src="./script.js" defer></script>
+    <title>Pricing Component Toggle</title>
+  </head>
+  <body>
+    <div class="container">
+      <section class="toggle-section">
+        <h1>Our Pricing</h1>
+        <div class="toggle">
+          <p>Annualy</p>
+          <label class="switch">
+            <input id="toggle-switch" type="checkbox" />
+            <span class="slider round"></span>
+          </label>
+          <p>Monthly</p>
+        </div>
+      </section>
+      <section class="card-section">
+        <div class="card">
+          <h3>Basic</h3>
+          <h2>
+            <span class="pound">&pound;</span
+            ><span class="price-display-basic">199.99</span>
+          </h2>
+          <ul>
+            <li>500 GB Storage</li>
+            <li>2 Users Allowed</li>
+            <li>Send up to 3 GB</li>
+          </ul>
+          <button>Learn More</button>
+        </div>
+        <div class="card card-main">
+          <h3>Professional</h3>
+          <h2>
+            <span class="pound">&pound;</span
+            ><span class="price-display-pro">249.99</span>
+          </h2>
+          <ul>
+            <li>1 TB Storage</li>
+            <li>5 Users Allowed</li>
+            <li>Send up to 3 GB</li>
+          </ul>
+          <button>Learn More</button>
+        </div>
+        <div class="card">
+          <h3>Master</h3>
+          <h2>
+            <span class="pound">&pound;</span
+            ><span class="price-display-master">399.99</span>
+          </h2>
+          <ul>
+            <li>2 TB Storage</li>
+            <li>10 Users Allowed</li>
+            <li>Send up to 20 GB</li>
+          </ul>
+          <button>Learn More</button>
+        </div>
+      </section>
+    </div>
+    <!-- Our Pricing Annually Monthly Basic &dollar;19.99 &dollar;199.99 500 GB
+    Storage 2 Users Allowed Send up to 3 GB Learn More Professional
+    &dollar;24.99 &dollar;249.99 1 TB Storage 5 Users Allowed Send up to 10 GB
+    Learn More Master &dollar;39.99 &dollar;399.99 2 TB Storage 10 Users Allowed
+    Send up to 20 GB Learn More -->
+  </body>
+</html>
